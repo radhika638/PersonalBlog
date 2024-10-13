@@ -1,0 +1,13 @@
+.content-pictures{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+@media (min-width: 319px) and (max-width: 480px){
+    .content-pictures{
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,9 @@
+
+.paragraph{
+    margin-top: 5px;
+    font-size: 1.25rem;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #cfe0e8;
+}

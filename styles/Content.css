@@ -1,0 +1,86 @@
+
+@import"./contentPictures.css";
+@import"./contentHeader.css";
+@import"./footer.css";
+@import"./fontFamily.css";
+@import"./contentMain.css";
+@import"./resume.css";
+
+body{
+    margin: 50px;
+    display:grid;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+
+.header{
+    grid-area: hd;
+    margin:0;
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: rgba(255, 228, 196, 0.858);
+    color: #319bd0;
+    text-align: center;
+}
+
+.content{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    background-color: #c5d5c581;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+@media (min-width: 319px) and (max-width: 480px){
+    body{
+        margin: 5px;
+        display:grid;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    }
+
+    .header{
+        grid-area: hd;
+        margin:0;
+        width: 100%;
+        font-size:4vw;
+    }
+
+    .subheading{
+        background-color: #e8e8cfe2;
+        margin:0;
+        font-size: 3vw;
+    }
+
+    .content{
+        grid-area: main;
+        display:flex;
+        flex-direction: column;
+        font-size: 0.85rem;
+
+    }
+
+    .paragraph{
+        margin-top: 5px;
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 1200px) {
+    body{
+        margin: 10px;
+        display:grid;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    }
+}
